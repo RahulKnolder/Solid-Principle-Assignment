@@ -1,0 +1,1 @@
+i am using open close principle in this question
