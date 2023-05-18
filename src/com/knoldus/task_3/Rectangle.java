@@ -1,10 +1,17 @@
 package com.knoldus.task_3;
 
-public class Rectangle extends Shape{
-    public void setHeight(double h) {
-        super.setHeight(h);
+public class Rectangle implements Shape {
+    private double length; // Represents the length of the rectangle
+    private double width; // Represents the width of the rectangle
+
+    // Set the dimensions of the rectangle
+    public void setDimensions(double length, double width) {
+        this.length = length;
+        this.width = width;
     }
-    public void setWidth(double w) {
-        super.setHeight(w);
+
+    // Calculate and return the area of the rectangle
+    public double getArea() {
+        return length * width;
     }
 }
